@@ -1,0 +1,299 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <title>Clinique</title>
+</head>
+
+<body>
+
+      <!-- topBar Start -->
+  <section id="topBar" class="d-none d-lg-block" >
+    <div class="container-fluid">
+      <div class="row justify-content-between px-4 py-3">
+        <div class="col-6 d-flex gap-4 align-items-center">
+          <small><i class="fa-solid fa-location-pin" id="icon-topbar"></i>123 Street, New York, USA</small>
+          <small><i class="fa-regular fa-clock" id="icon-topbar"></i>Mon - Fri : 09.00 AM - 09.00 PM</small>
+        </div>
+        <div class="col-6 d-flex gap-4 justify-content-end align-items-center">
+          <p>
+            <i class="fa-solid fa-phone" id="icon-topbar"></i>+012 345 6789</span>
+          </p>
+          <div id="social-media" class="d-flex gap-2">
+            <a href="#" class="rounded-circle d-flex justify-content-center align-items-center">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="rounded-circle d-flex justify-content-center align-items-center">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" class="rounded-circle d-flex justify-content-center align-items-center">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="rounded-circle d-flex justify-content-center align-items-center">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- topBar End -->
+
+
+ <!-- navbar Start -->
+ <section id="navbar">
+    <div class="container-fluid pe-lg-0 ">
+      <nav class="navbar navbar-expand-lg px-4 py-3  position-relative ">
+        <a class="navbar-brand" href="/index.html">
+          <i class="fa-solid fa-circle-h"></i>
+          Klinik
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarText">
+          <ul class="navbar-nav mb-2 mb-lg-0 " id="links">
+            <li class="nav-item">
+              <a class="nav-link activelink " aria-current="page" href="/index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/service.html">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#collapsePages" data-bs-toggle="collapse" aria-expanded="false"
+                aria-controls="collapsePages"> PAGES<i class="fa-solid fa-chevron-down ms-2 " id="arrow-bottom"></i></a>
+              <!-- dropdown phone and mobile -->
+              <div class="collapse d-lg-none" id="collapsePages">
+                <div class="card card-body">
+                  <a class="p-2 d-block " href="/feature.html">Feature</a>
+                  <a class="p-2 d-block " href="/ourdoctor.html">Our Doctor</a>
+                  <a class="p-2 d-block " href="/Appointment.html">Appointment</a>
+                </div>
+              </div>
+              <!--  list hover in laptop -->
+              <ul class="rounded d-none d-lg-block  list-group list-group-flush position-absolute z-3" id="list-pages">
+                <li class="list-group-item p-0 text-center"> <a class="p-2 d-block" href="/feature.html">Feature</a>
+                </li>
+                <li class="list-group-item p-0 text-center"> <a class="p-2 d-block" href="/ourdoctor.html">Our
+                    Doctor</a></li>
+                <li class="list-group-item p-0 text-center"> <a class="p-2 d-block"
+                    href="/Appointment.html">Appointment</a> </li>
+              </ul>
+
+
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">CONTACT</a>
+            </li>
+          </ul>
+
+        </div>
+        <button id="btn-nav" type="button" class="btn position-absolute end-0 top-0 bottom -0 h-100 d-none d-lg-block">
+          <a href="/Appointment.html" class="text-white">Appointment <i class="fa-solid fa-arrow-right"></i></a>
+        </button>
+      </nav>
+    </div>
+  </section>
+  <!-- navbar End -->
+
+
+    <!-- Breadcrumb start -->
+    <section id="Breadcrumb" class="d-flex align-items-center">
+        <div class="container">
+
+            <h1 class="text-white fw-bold display-4">Contact</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+
+        </div>
+    </section>
+    <!-- Breadcrumb end -->
+
+
+    <!-- contact start -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div id="location" class="p-5 rounded mb-4">
+                        <div class="d-flex align-items-center gap-4">
+                            <p class="bg-white p-3 rounded-circle">
+                                <i class="fa-solid fa-location-pin" id="icon-topbar"></i>
+                            </p>
+                            <p id="title-contact" class="d-flex flex-column gap-2 ">Address<strong
+                                    class="text-dark">Morocco,casablanca</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div id="phone" class="p-5 rounded mb-4">
+                        <div class="d-flex align-items-center gap-4">
+                            <p class="bg-white p-3 rounded-circle">
+                                <i class="fa-solid fa-phone" id="icon-topbar"></i>
+                            </p>
+                            <p id="title-contact" class="d-flex flex-column gap-2 ">Call Us Now <strong
+                                    class="text-dark">+012 345
+                                    6789</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div id="email" class="p-5 rounded mb-4">
+                        <div class="d-flex align-items-center gap-4">
+                            <p class="bg-white p-3 rounded-circle">
+                                <i class="fa-solid fa-envelope"></i>
+                            </p>
+                            <p id="title-contact" class="d-flex flex-column gap-2 ">Mail Us Now <strong
+                                    class="text-dark">support@gmail.com</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 " >
+                    <div class="p-4 p-lg-5 mb-4 mb-lg-0 rounded" id="container-form">
+                        <div class="mb-3">
+                            <p id="name-section" class="border rounded-pill mb-3 px-4 py-1">Contact</p>
+                            <h1 id="title-section" class="mb-3 fw-bold">Have Any Query? Please Contact Us!</h1>
+                            <p id="para">The contact form is currently inactive. Get a functional and working
+                                contact form with Ajax &
+                                PHP in a few minutes. Just copy and paste the files, add a little code and you're
+                                done.
+                                Download Now.
+                            </p>
+                        </div>
+                        <form class="row g-4 ">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control p-3 border-0" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control p-3 border-0" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Your Email">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control p-3 border-0" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Subject">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="form-control p-3 border-0" id="exampleFormControlTextarea1"
+                                    rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col ">
+                                <button type="submit" class="btn btn-primary w-100  p-3 border-0">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="h-100">
+                        <iframe class="rounded h-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106376.56000802846!2d-7.669393781715862!3d33.57240323199791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca!5e0!3m2!1sfr!2sma!4v1725391115135!5m2!1sfr!2sma"
+                        width="100%"  style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact end -->
+
+
+
+ <!-- Footer Start -->
+ <section id="Footer"  >
+    <div class="container px-4 px-md-0">
+      <div class="py-5">
+        <div class="row g-5 g-lg-0 py-4">
+          <div class="col-12 col-md-6 col-lg">
+            <div id="Address">
+              <h5 class="mb-4">Address</h5>
+              <div class="mb-3 d-flex flex-column">
+                <p class="mb-2 "><i class="fa-solid fa-location-pin me-3 text-white " id="icon-topbar"></i>123 Street,
+                  New York, USA</p>
+                <p class="mb-2"><i class="fa-solid fa-phone me-3 text-white " id="icon-topbar"></i>+012 345 67890</p>
+                <p class="mb-2"><i class="fa-solid fa-envelope me-3 text-white "></i>support@gmail.com</p>
+              </div>
+              <div class="d-flex align-items-center gap-2" id="social-media">
+                <a href="" class="p-2 rounded-circle "><i class="bi bi-facebook"></i></a>
+                <a href="" class="p-2 rounded-circle "><i class="bi bi-twitter-x"></i></a>
+                <a href="" class="p-2 rounded-circle "><i class="bi bi-linkedin"></i></a>
+                <a href="" class="p-2 rounded-circle "><i class="bi bi-youtube"></i></a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg">
+            <div id="Services">
+              <h5 class="mb-4">Services</h5>
+              <div class="d-flex flex-column" id="Services-links">
+                <a href="#" class="mb-1"><i class="fa-solid fa-angle-right me-2"
+                    id="icon-arrow"></i><span>Cardiology</span></a>
+                <a href="#" class="mb-1 "><i class="fa-solid fa-angle-right me-2"
+                    id="icon-arrow"></i><span>Pulmonary</span></a>
+                <a href="#" class="mb-1 "><i class="fa-solid fa-angle-right me-2"
+                    id="icon-arrow"></i><span>Neurology</span></a>
+                <a href="#" class="mb-1 "><i class="fa-solid fa-angle-right me-2"
+                    id="icon-arrow"></i><span>Prthpedics</span></a>
+                <a href="#" class="mb-1 "><i class="fa-solid fa-angle-right me-2"
+                    id="icon-arrow"></i><span>Laboratory</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg">
+            <div id="Quick-Links">
+              <h5 class="mb-4">Quick Links</h5>
+              <div class="d-flex flex-column" id="links">
+                <a href="/about.html" class="mb-1 "><i class="fa-solid fa-angle-right me-2"></i>About Us</a>
+                <a href="/contact.html" class="mb-1 "><i class="fa-solid fa-angle-right me-2"></i>Contact Us</a>
+                <a href="/service.html" class="mb-1 "><i class="fa-solid fa-angle-right me-2"></i>Services</a>
+                <a href="/feature.html" class="mb-1 "><i class="fa-solid fa-angle-right me-2"></i>Feature</a>
+                <a href="/contact.html" class="mb-1 "><i class="fa-solid fa-angle-right me-2"></i>Support</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg">
+          </div>
+
+        </div>
+        <hr>
+      </div>
+    </div>
+  </section>
+  <!-- Footer End -->
+
+    <!-- Booststrap - Font awesome -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

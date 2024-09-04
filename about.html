@@ -1,0 +1,392 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Css -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <title>Clinique</title>
+</head>
+
+<body>
+  <!-- topBar Start -->
+  <section id="topBar" class="d-none d-lg-block" >
+    <div class="container-fluid">
+      <div class="row justify-content-between px-4 py-3">
+        <div class="col-6 d-flex gap-4 align-items-center">
+          <small><i class="fa-solid fa-location-pin" id="icon-topbar"></i>123 Street, New York, USA</small>
+          <small><i class="fa-regular fa-clock" id="icon-topbar"></i>Mon - Fri : 09.00 AM - 09.00 PM</small>
+        </div>
+        <div class="col-6 d-flex gap-4 justify-content-end align-items-center">
+          <p>
+            <i class="fa-solid fa-phone" id="icon-topbar"></i>+012 345 6789</span>
+          </p>
+          <div id="social-media" class="d-flex gap-2">
+            <a href="#" class="rounded-circle d-flex justify-content-center align-items-center">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="rounded-circle d-flex justify-content-center align-items-center">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" class="rounded-circle d-flex justify-content-center align-items-center">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="rounded-circle d-flex justify-content-center align-items-center">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- topBar End -->
+
+
+ <!-- navbar Start -->
+ <section id="navbar">
+  <div class="container-fluid pe-lg-0 ">
+    <nav class="navbar navbar-expand-lg px-4 py-3  position-relative ">
+      <a class="navbar-brand" href="/index.html">
+        <i class="fa-solid fa-circle-h"></i>
+        Klinik
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end " id="navbarText">
+        <ul class="navbar-nav mb-2 mb-lg-0 " id="links">
+          <li class="nav-item">
+            <a class="nav-link activelink " aria-current="page" href="/index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/service.html">SERVICE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#collapsePages" data-bs-toggle="collapse" aria-expanded="false"
+              aria-controls="collapsePages"> PAGES<i class="fa-solid fa-chevron-down ms-2 " id="arrow-bottom"></i></a>
+            <!-- dropdown phone and mobile -->
+            <div class="collapse d-lg-none" id="collapsePages">
+              <div class="card card-body">
+                <a class="p-2 d-block " href="/feature.html">Feature</a>
+                <a class="p-2 d-block " href="/ourdoctor.html">Our Doctor</a>
+                <a class="p-2 d-block " href="/Appointment.html">Appointment</a>
+              </div>
+            </div>
+            <!--  list hover in laptop -->
+            <ul class="rounded d-none d-lg-block  list-group list-group-flush position-absolute z-3" id="list-pages">
+              <li class="list-group-item p-0 text-center"> <a class="p-2 d-block" href="/feature.html">Feature</a>
+              </li>
+              <li class="list-group-item p-0 text-center"> <a class="p-2 d-block" href="/ourdoctor.html">Our
+                  Doctor</a></li>
+              <li class="list-group-item p-0 text-center"> <a class="p-2 d-block"
+                  href="/Appointment.html">Appointment</a> </li>
+            </ul>
+
+
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">CONTACT</a>
+          </li>
+        </ul>
+
+      </div>
+      <button id="btn-nav" type="button" class="btn position-absolute end-0 top-0 bottom -0 h-100 d-none d-lg-block">
+        <a href="/Appointment.html" class="text-white">Appointment <i class="fa-solid fa-arrow-right"></i></a>
+      </button>
+    </nav>
+  </div>
+</section>
+<!-- navbar End -->
+
+  <!-- Breadcrumb start -->
+   <section id="Breadcrumb" class="d-flex align-items-center" >
+    <div class="container">
+    
+            <h1 class="text-white fw-bold display-4">About Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">About</li>
+                </ol>
+              </nav>
+        
+    </div>
+   </section>
+  <!-- Breadcrumb end -->
+
+
+  <!-- About Us Start -->
+  <section id="About-Us">
+    <div class="container px-4 px-md-0">
+      <div class="row g-5 px-lg-0">
+        <div class="col-12 col-lg-6 d-flex flex-column" id="section-img">
+          <img id="img-about-1" class="align-self-end rounded w-75" src="./img/about-1.jpg" alt="">
+          <img class="w-50 pt-3 pe-3 bg-white rounded" id="img-about-2" src="./img/about-2.jpg" alt="">
+        </div>
+        <div class="col-12 col-lg-6" id="text">
+          <p id="name-section" class="mb-4 border rounded-pill py-1 px-4">About Us</p>
+          <h1 id="title-section" class="mb-4">Why You Should Trust Us? Get Know About Us!</h1>
+          <p id="para" class="mb-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+            eos. Clita erat ipsum
+            et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+          <p id="para" class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum
+            amet diam ipsum. Clita
+            clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos. </p>
+          <p id="advantage" class="mb-2"><i class="fa-regular fa-circle-check me-3 m "></i>Quality health care</p>
+          <p id="advantage" class="mb-2"><i class="fa-regular fa-circle-check me-3 m "></i>Only Qualified Doctors </p>
+          <p id="advantage" class="mb-4"><i class="fa-regular fa-circle-check me-3 m "></i>Medical Research
+            Professionals</p>
+          <button id="btn-Read" class="btn rounded-pill py-3 px-5 text-light " type="button">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About End -->
+
+
+   <!-- Features Start -->
+   <section id="Features" class="position-relative py-5 py-lg-0 ">
+    <div class="container px-4 px-md-0">
+      <div class="row g-5 g-lg-0 h-100">
+        <div class="col-12 col-lg-6  align-self-center">
+          <p class="border rounded-pill py-1 px-4 mb-4 text-white">Features</p>
+          <h1 class="text-white fw-bold mb-4">Why Choose Us</h1>
+          <p class="text-white mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam
+            et
+            eos.
+            Clita erat ipsum et
+            lorem et sit, sed stet lorem sit clita duo justo erat amet </p>
+          <div class="row g-4 mt-4">
+            <div class="col-6 d-flex gap-3">
+              <span id="icon" class="bg-white d-flex justify-content-center align-items-center rounded-circle"><i
+                  class="fa-solid fa-user-doctor"></i></span>
+              <p class="text-white">Experien <br> ce <strong>Doctors</strong></p>
+            </div>
+            <div class="col-6 d-flex gap-3">
+              <span id="icon" class="bg-white d-flex justify-content-center align-items-center rounded-circle"><i
+                  class="fa-solid fa-medal"></i></span>
+              <p class="text-white">Quality <br> <strong>Services</strong></p>
+            </div>
+            <div class="col-6 d-flex gap-3">
+              <span id="icon" class="bg-white d-flex justify-content-center align-items-center rounded-circle"><i
+                  class="fa-solid fa-comment-dots"></i></span>
+              <p class="text-white">Positive <br> <strong>Consultation</strong></p>
+            </div>
+            <div class="col-6 d-flex gap-3">
+              <span id="icon" class="bg-white d-flex justify-content-center align-items-center rounded-circle"><i
+                  class="fa-solid fa-headset"></i></span>
+              <p class="text-white">24 Hours <br> <strong>Support</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6"> <img id="img-features" class="w-lg-50 w-100 object-fit-cover"
+            src="./img/feature.jpg" alt=""></div>
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+  <!-- Features End -->
+
+
+  <!-- Doctors Start -->
+  <section id="Doctors">
+    <div class="container px-4 px-md-0">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <p id="name-section" class="border rounded-pill py-1 px-4 mb-2">Doctors</p>
+        <h1 id="title-section" class="fw-bold mb-4">Our Experience Doctors</h1>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg ">
+          <div id="doctor" class="overflow-hidden rounded">
+            <img class="w-100 position-relative " id="img-doctor" src="./img/doct1.png" alt="">
+            <div id="informations" class="p-4 gap-4 position-relative ">
+              <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+                <h5 class="fw-bold">Dr.Emily Davis</h5>
+                <p id="Department">Neurology </p>
+              </div>
+              <div id="social-media" class="d-inline-flex justify-content-center w-100 gap-2">
+                <a href="#" id="link" class="d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-facebook" id="icon-socialmedia"></i>
+                </a>
+                <a href="#" id="link" class="d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="#" id="link" class="d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg ">
+          <div id="doctor" class="overflow-hidden rounded">
+            <img class="w-100 position-relative " id="img-doctor" src="./img/doct2.jpg" alt="">
+            <div id="informations" class="p-4 gap-4 position-relative ">
+              <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+                <h5 class="fw-bold">Dr.Michael Brown</h5>
+                <p id="Department">Pediatrics</p>
+              </div>
+              <div id="social-media" class="d-inline-flex justify-content-center w-100 gap-2">
+                <a href="#" id="link" class="d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-facebook" id="icon-socialmedia"></i>
+                </a>
+                <a href="#" id="link" class="d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="#" id="link" class="d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg ">
+          <div id="doctor" class="overflow-hidden rounded">
+            <img class="w-100 position-relative " id="img-doctor" src="./img/doct3.jpg" alt="">
+            <div id="informations" class="p-4 gap-4 position-relative ">
+              <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+                <h5 class="fw-bold">Dr.Sarah Johnson</h5>
+                <p id="Department">Dermatology</p>
+              </div>
+              <div id="social-media" class="d-inline-flex justify-content-center w-100 gap-2">
+                <a href="#" id="link" class="d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-facebook" id="icon-socialmedia"></i>
+                </a>
+                <a href="#" id="link" class="d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="#" id="link" class="d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg ">
+          <div id="doctor" class="overflow-hidden rounded">
+            <img class="w-100 position-relative " id="img-doctor" src="./img/doct 4.png" alt="">
+            <div id="informations" class="p-4 gap-4 position-relative ">
+              <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+                <h5 class="fw-bold">Dr.Olivia Harris</h5>
+                <p id="Department">Ophthalmology</p>
+              </div>
+              <div id="social-media" class="d-inline-flex justify-content-center w-100 gap-2">
+                <a href="#" id="link" class="d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-facebook" id="icon-socialmedia"></i>
+                </a>
+                <a href="#" id="link" class="d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="#" id="link" class="d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Doctors End -->
+
+
+
+ <!-- Footer Start -->
+ <section id="Footer"  >
+  <div class="container px-4 px-md-0">
+    <div class="py-5">
+      <div class="row g-5 g-lg-0 py-4">
+        <div class="col-12 col-md-6 col-lg">
+          <div id="Address">
+            <h5 class="mb-4">Address</h5>
+            <div class="mb-3 d-flex flex-column">
+              <p class="mb-2 "><i class="fa-solid fa-location-pin me-3 text-white " id="icon-topbar"></i>123 Street,
+                New York, USA</p>
+              <p class="mb-2"><i class="fa-solid fa-phone me-3 text-white " id="icon-topbar"></i>+012 345 67890</p>
+              <p class="mb-2"><i class="fa-solid fa-envelope me-3 text-white "></i>support@gmail.com</p>
+            </div>
+            <div class="d-flex align-items-center gap-2" id="social-media">
+              <a href="" class="p-2 rounded-circle "><i class="bi bi-facebook"></i></a>
+              <a href="" class="p-2 rounded-circle "><i class="bi bi-twitter-x"></i></a>
+              <a href="" class="p-2 rounded-circle "><i class="bi bi-linkedin"></i></a>
+              <a href="" class="p-2 rounded-circle "><i class="bi bi-youtube"></i></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg">
+          <div id="Services">
+            <h5 class="mb-4">Services</h5>
+            <div class="d-flex flex-column" id="Services-links">
+              <a href="#" class="mb-1"><i class="fa-solid fa-angle-right me-2"
+                  id="icon-arrow"></i><span>Cardiology</span></a>
+              <a href="#" class="mb-1 "><i class="fa-solid fa-angle-right me-2"
+                  id="icon-arrow"></i><span>Pulmonary</span></a>
+              <a href="#" class="mb-1 "><i class="fa-solid fa-angle-right me-2"
+                  id="icon-arrow"></i><span>Neurology</span></a>
+              <a href="#" class="mb-1 "><i class="fa-solid fa-angle-right me-2"
+                  id="icon-arrow"></i><span>Prthpedics</span></a>
+              <a href="#" class="mb-1 "><i class="fa-solid fa-angle-right me-2"
+                  id="icon-arrow"></i><span>Laboratory</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg">
+          <div id="Quick-Links">
+            <h5 class="mb-4">Quick Links</h5>
+            <div class="d-flex flex-column" id="links">
+              <a href="/about.html" class="mb-1 "><i class="fa-solid fa-angle-right me-2"></i>About Us</a>
+              <a href="/contact.html" class="mb-1 "><i class="fa-solid fa-angle-right me-2"></i>Contact Us</a>
+              <a href="/service.html" class="mb-1 "><i class="fa-solid fa-angle-right me-2"></i>Services</a>
+              <a href="/feature.html" class="mb-1 "><i class="fa-solid fa-angle-right me-2"></i>Feature</a>
+              <a href="/contact.html" class="mb-1 "><i class="fa-solid fa-angle-right me-2"></i>Support</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg">
+        </div>
+
+      </div>
+      <hr>
+    </div>
+  </div>
+</section>
+<!-- Footer End -->
+
+  <!-- Booststrap - Font awesome -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

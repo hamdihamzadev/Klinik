@@ -1,0 +1,605 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+css / 
+ - index.css 
+ - index.css.map
+ - index.scss
+ - 
+
+*
+
+
+/* Variables */
+$font-familly:'Roboto',
+sans-serif;
+$color-primary: #0463FA;
+$color-light: #eff5ff;
+$color-dark: #1B2C51;
+$color-para: #8D8E92;
+$color-white:white;
+
+// Typography
+body {
+    font-family: $font-familly;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+// padding margin
+p {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    width: fit-content;
+}
+
+svg {
+    color: $color-primary;
+}
+
+button {
+    background-color: #0463FA;
+    color: $color-light;
+}
+
+small {
+    color: $color-para;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.activelink {
+    color: $color-primary;
+}
+
+// Breadcrumb
+#Breadcrumb {
+    height: 37%;
+    background-image: url(/img/header-page.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+// margin about sections
+#slide,
+#About-Us,
+section#Services,
+#Features,
+#Doctors,
+#testimonial,
+#Appointment,
+#Breadcrumb,
+#contact {
+    margin-bottom: 150px;
+}
+
+
+
+// start topBar
+#topBar {
+    background-color: $color-light;
+
+    #icon-topbar {
+        margin-right: 6px;
+    }
+
+    #social-media {
+        a {
+            background-color: $color-white;
+            height: 30px;
+            width: 30px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $color-primary;
+
+                i {
+                    color: $color-white;
+                }
+            }
+        }
+
+        i {
+            color: $color-primary;
+            transition: color 0.3s ease;
+        }
+    }
+
+
+
+}
+
+#navbar {
+    #navbarText {
+        margin-right: 200px;
+    }
+
+    #btn-nav {
+        background-color: $color-primary;
+        color: $color-light;
+        width: 200px;
+        border-radius: 0px;
+
+        svg {
+            color: $color-light;
+            margin-left: 5px;
+        }
+    }
+}
+
+// Slide start
+#bg-slide{
+    background-color: $color-primary;
+    #text-slide {
+    
+
+        #title-text {
+            font-weight: 900;
+            color: $color-light;
+        }
+    
+    }
+}
+
+
+// Slide end
+
+// Navbar start
+#navbar {
+    #navbarText {
+        ul {
+            li {
+                a {
+                    #arrow-bottom {
+                        color: rgb(0, 0, 0);
+                    }
+                }
+
+                a:hover {
+                    color: $color-primary;
+                }
+
+                a:hover #arrow-bottom {
+                    color: $color-primary;
+                }
+
+                #list-pages {
+                    width: 132px;
+                    margin-top: 30px;
+                    opacity: 0;
+                    transition: transform 0.7s ease;
+
+                    li {
+                        a {
+                            color: $color-primary;
+
+                        }
+
+                        &:hover {
+                            background-color: $color-primary;
+
+                            a {
+                                color: $color-white;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    #list-pages {
+                        opacity: 1;
+                        transform: translateY(-16px);
+                    }
+                }
+
+                #collapsePages{
+                    a{
+                        color: black;
+                    }
+                    a:hover{
+                        color: $color-primary;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// Navbar end
+
+// About us start
+#About-Us {
+
+
+    #text {
+        #name-section {
+            color: $color-para;
+        }
+
+        #title-section {
+            color: $color-dark;
+            font-weight: 600;
+        }
+
+        #para,
+        #advantage {
+            color: $color-para;
+        }
+
+        #btn-Read {
+            background-color: $color-primary;
+        }
+
+
+    }
+
+    #section-img {
+
+        #img-about-2 {
+            margin-top: -25%;
+        }
+    }
+}
+
+// Services start
+
+#Services {
+
+
+    #name-section {
+        color: $color-para;
+    }
+
+    #title-section {
+        font-weight: 600;
+        color: $color-dark;
+    }
+
+    #bg-service {
+
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: $color-light;
+
+        #container-icon {
+            height: 65px;
+            width: 65px;
+        }
+
+        #name-service {
+            color: $color-dark;
+        }
+
+        #para {
+            color: $color-para;
+        }
+
+        #btn {
+            width: max-content;
+            height: 40px;
+            transition: 0.5s;
+
+            span {
+                display: none;
+                transition: 0.5s;
+            }
+        }
+
+        &:hover #btn span {
+            display: block;
+        }
+
+        &:hover #btn #icon {
+            margin-right: 8px;
+            transition: 0.5s;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+            box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+
+}
+
+
+// Features start
+#Features {
+    background-color: $color-primary;
+    height: 75%;
+
+    #icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    #img-features {
+        height: -webkit-fill-available;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+// Doctors start
+#Doctors {
+
+
+    #name-section {
+        color: $color-para;
+    }
+
+    #title-section {
+        color: $color-dark;
+    }
+
+
+    #doctor {
+        position: relative;
+
+        #img-doctor {
+            transition: transform 0.5s ease; // Spécifiez la propriété à animer
+        }
+
+        #informations {
+            background-color: $color-light;
+            height: 100px;
+            transition: height 0.5s ease, margin-top 0.5s ease;
+
+
+            #Department {
+                color: $color-primary;
+            }
+
+            #social-media {
+                opacity: 0;
+                transition: opacity 0.5s ease;
+
+                #link {
+                    height: 40px;
+                    width: 40px;
+                    background-color: $color-white;
+                    transition: background-color 0.3s ease;
+
+                    i {
+                        color: $color-primary;
+                    }
+
+                    &:hover {
+                        background-color: $color-primary;
+                    }
+
+                    &:hover {
+                        i {
+                            color: $color-white;
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        &:hover {
+            #img-doctor {
+                // top: -20px;
+                transform: translateY(-20px);
+
+            }
+
+            #informations #social-media {
+                opacity: 1;
+            }
+
+            #informations {
+                height: 160px;
+                margin-top: -60px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+    #icon {
+        height: 20px;
+        width: 20px;
+
+        #icon-socialmedia {
+            color: $color-primary;
+        }
+    }
+
+}
+
+
+// Appointmen start
+#Appointment {
+    #name-section {
+        color: $color-para;
+    }
+
+    #title-section {
+        color: $color-dark;
+    }
+
+    #para {
+        color: $color-para;
+    }
+
+    #phone,
+    #email {
+        background-color: $color-light;
+
+        #title-contact {
+            color: $color-para;
+        }
+    }
+
+    #container-form {
+        background-color: $color-light;
+    }
+
+
+
+
+
+
+}
+
+// Appointmen end
+
+
+
+
+// testimonial start
+
+#testimonial {
+    #header-testimonial {
+        #name-section {
+            color: $color-para;
+        }
+
+        #title-section {
+            color: $color-dark
+        }
+    }
+
+}
+
+// testimonial end
+
+
+
+
+// Footer Start
+#Footer {
+    background-color: $color-dark;
+    color: white;
+
+
+
+    // Address
+
+    #Address {
+
+        #social-media {
+            a {
+                border: 1px solid $color-white;
+                transition: border-color 0.3s ease, color 0.3s ease;
+                color: $color-white;
+        width: max-content;
+            }
+
+            a:hover {
+                color: $color-primary;
+                border-color: $color-primary;
+            }
+        }
+    }
+
+    // Services and Quick Links
+    #Services #Services-links a,
+    #Quick-Links #links a {
+        display: inline-block;
+        transition: transform 0.3s ease;
+        color: $color-white;
+        width: max-content;
+    }
+
+    #Services #Services-links a:hover #icon-arrow,
+    #Quick-Links #links a:hover #icon-arrow {
+        transform: scaleX(1);
+    }
+
+    #Services #Services-links a:hover,
+    #Quick-Links #links a:hover {
+        color: $color-primary;
+        transform: scaleX(1.1);
+    }
+
+
+    #btn-signup {
+        transform: translate(-16px, -50%);
+    }
+
+}
+
+// Footer end
+
+
+// ---------------- page contact ---------------
+#contact {
+    #name-section {
+        color: $color-para;
+    }
+
+    #title-section {
+        color: $color-dark;
+    }
+
+    #para {
+        color: $color-para;
+    }
+
+    #phone,
+    #location,
+    #email {
+        background-color: $color-light;
+    }
+
+    #container-form {
+        background-color: $color-light;
+    }
+}
+
+// --------------------- Media Query ----------
+
+/* Style for tablets (less than de 992px) */
+@media (max-width: 991.98px) {
+    #Features{
+        height: 100%;
+        overflow: hidden;
+        #img-features {
+            position: relative;
+        
+        }
+    }
+}
+
+/* Style for phone (less than de 767.98px) */
+@media (max-width: 767.98px) {
+    #Features{
+        height: 100%;
+        overflow: hidden;
+        #img-features {
+            position: relative;
+        
+        }
+    }
+ 
+
+}
